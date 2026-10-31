@@ -1,21 +1,15 @@
 package org.cloudbus.cloudsim.serverless.custom;
 
-import java.util.Arrays;
 import java.util.List;
 
 public class Demo {
 
     public static void main(String[] args) {
-        Function f1 = new Function("FunctionA", Arrays.asList("numpy", "requests"));
-        Function f2 = new Function("FunctionB", Arrays.asList("numpy"));
-        Function f3 = new Function("FunctionC", Arrays.asList("pandas"));
+        List<Function> functions = TreeInfo.catalog();
 
-        f1.recordInvocation();
-        f1.recordInvocation();
-        f1.recordInvocation();
-        f3.recordInvocation();
-
-        List<Function> functions = Arrays.asList(f1, f2, f3);
+        TraceWriter.write(functions, 0.1, 1, "trace_low.csv");
+        TraceWriter.write(functions, 0.5, 1, "trace_medium.csv");
+        TraceWriter.write(functions, 3, 1, "trace_high.csv");
 
         GranularityTreeBuilder builder = new GranularityTreeBuilder();
         GranularityTreeNode tree = builder.buildTree(functions);
@@ -25,5 +19,7 @@ public class Demo {
 
         new SchedulerBaseline().schedule(tree);
         new WorkloadAwareScheduler().schedule(tree);
+
+        Experiment.run(tree);
     }
 }

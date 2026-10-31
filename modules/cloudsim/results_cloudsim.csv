@@ -1,0 +1,7 @@
+Load,Scheduler,ColdPct,TepidPct,WarmPct,AvgLatency,Throughput,ContainerSec
+Low,Baseline,67,23,10,5.0548,0.1045,5914.9
+Low,Aware,60.5,23.5,16,5.022,0.1045,12185.7
+Medium,Baseline,54.2,26.7,19.1,4.9296,0.5309,24851.6
+Medium,Aware,53.6,27,19.4,4.9285,0.5309,49411.8
+High,Baseline,53.67,28.33,18,5.0266,3.0106,6717.9
+High,Aware,54.33,27.33,18.33,5.0281,3.0106,15249.2

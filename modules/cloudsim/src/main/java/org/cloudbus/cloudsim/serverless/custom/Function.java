@@ -29,6 +29,10 @@ public class Function {
         invocationCount++;
     }
 
+    public void reset() {
+        invocationCount = 0;
+    }
+
     @Override
     public String toString() {
         return name + " deps=" + dependencies + " calls=" + invocationCount;

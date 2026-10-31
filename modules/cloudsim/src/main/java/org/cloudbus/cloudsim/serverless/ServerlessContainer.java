@@ -53,6 +53,7 @@ public class ServerlessContainer extends Container {
     private double startTime = 0;
     private double finishTime = 0;
     private double idleStartTime = 0;
+    public double keepAlive = 30;
     public ServerlessContainer(int id, int userId, String type, double mips, int numberOfPes, int ram, long bw, long size, String containerManager, ContainerCloudletScheduler containerRequestScheduler, double schedulingInterval, boolean newCont, boolean idling, boolean reschedule, double idleStartTime, double startTime, double finishTime) {
         super(id, userId, mips, numberOfPes, ram, bw, size, containerManager, containerRequestScheduler, schedulingInterval);
         this.newContainer = newCont;

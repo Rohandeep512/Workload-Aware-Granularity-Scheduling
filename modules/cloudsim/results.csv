@@ -1,0 +1,7 @@
+Load,Scheduler,ColdPct,AvgLatency,Throughput,ContainerSec
+Low,Baseline,35.09,0.5348,0.1008,36597.9
+Low,Aware,24.63,0.4692,0.1008,44237.8
+Medium,Baseline,8.04,0.3585,0.5038,17907.1
+Medium,Aware,6.63,0.3398,0.5038,19473.8
+High,Baseline,13.04,0.3792,3.0209,4138.8
+High,Aware,14.23,0.3769,3.0205,4390.1

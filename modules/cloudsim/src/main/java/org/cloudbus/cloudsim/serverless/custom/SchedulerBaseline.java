@@ -12,4 +12,8 @@ public class SchedulerBaseline {
             }
         }
     }
+
+    public double keepAlive(Function f, int total) {
+        return 30;
+    }
 }
