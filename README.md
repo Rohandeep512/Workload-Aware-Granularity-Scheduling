@@ -99,3 +99,4 @@ Multiple seeds with confidence intervals, validation on real traces, more keep a
 
 * Base paper: M. Hanaforoosh, M. A. Azgomi, M. Ashtiani, "Reducing the Cost of Cold Start Time in Serverless Function Executions Using Granularity Trees," Future Generation Computer Systems, vol. 164, 2025.
 * CloudSimSC toolkit by Anupama Mampage, The University of Melbourne. The original license and notices of CloudSimSC apply to the unmodified parts of this repository.
+  RESEARCH PAPER : https://docs.google.com/document/d/1H4__gREXgxnavnuGKqp6yPV16POStmLx/edit?usp=sharing&ouid=100130950539533269080&rtpof=true&sd=true
